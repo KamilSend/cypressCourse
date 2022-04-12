@@ -1,0 +1,30 @@
+{
+  "name": "cypress-kurs",
+  "version": "1.0.0",
+  "description": "Cypress kurs z udemy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "triggerWebdriver": "npx cypress run --spec cypress/integration/webdriver/*",
+    "junit-merge": "npx junit-merge -d cypress/results/junit -o cypress/results/junit/results.xml",
+    "delete-junit-report": "rm -rf cypress/results/junit/results.xml",
+    "delete-results": "rm -rf cypress/results/*",
+    "mochawesome-merge": "npx mochawesome-merge cypress/results/mochawesome/*.json > mochawesome.json"
+  },
+  "author": "Kamil Sendecki",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^9.5.1",
+    "cypress-multi-reporters": "^1.5.0",
+    "cypress-xpath": "^1.6.2",
+    "mocha": "^9.2.2",
+    "mocha-junit-reporter": "^2.0.2",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.2.1",
+    "mochawesome-report-generator": "^6.2.0"
+  },
+  "dependencies": {
+    "cypress-file-upload": "^5.0.8",
+    "yargs-parser": "^21.0.1"
+  }
+}

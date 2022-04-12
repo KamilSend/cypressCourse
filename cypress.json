@@ -1,0 +1,14 @@
+{
+    "baseUrl": "https://webdriveruniversity.com",
+    "ignoreTestFiles": "**/integration/2-advanced-examples/*",
+    "projectId": "z86287",
+
+    "env":{
+        "first_name": "sarah"
+    },
+
+    "reporter": "cypress-multi-reporters",
+    "reporterOptions": {
+      "configFile": "reporter-config.json"
+    }
+}
